@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+<iframe
+ frameBorder="0"
+ height="450px"  
+ src="https://onecompiler.com/embed/" 
+ width="100%"
+ id="myIframe"
+ ></iframe>
+
+<script>
+const iframe = document.getElementById('myIframe');
+const iframeContent = iframe.contentWindow.document.body.innerHTML; 
+console.log(iframe.innerHTML)
+console.log(iframe)
+</script>
+</body>
+</html>
